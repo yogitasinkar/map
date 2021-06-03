@@ -4,7 +4,7 @@ import {  Modal, ModalHeader, ModalBody, Row } from 'reactstrap';
 const DamModal = ({modal, toggle, currentState}) => {
     return (
       <Modal isOpen={modal} toggle={toggle} >
-        <ModalHeader toggle={toggle}>Dam Info -  {currentState}</ModalHeader>
+        <ModalHeader toggle={toggle}>Interventions -  {currentState}</ModalHeader>
         <ModalBody>
             <Row>
                 <p className='text-center'>Reservoir</p>

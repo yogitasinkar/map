@@ -9,7 +9,7 @@ const FactoryModal = ({modal, toggle, currentState}) => {
             <Row>
                 <p className='text-center'>Factory</p>
                 <strong>Waste Produced:</strong>
-                <strong>Water Consumed:</strong> <span>(Ground water + Municipal)</span>
+                <strong>Water Consumed:</strong> <span className='small'>(Ground water + Municipal)</span>
             </Row>
         </ModalBody>
       </Modal>

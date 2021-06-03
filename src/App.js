@@ -9,6 +9,7 @@ import waterDam from './images/dam.svg';
 import factory from './images/factory.svg';
 import DamModal from './DamModal';
 import FactoryModal from './FactoryModal';
+import RenderSwitch from './RenderSwitch';
 
 const INDIA_TOPO_JSON = require('./india.topo.json');
 
@@ -23,7 +24,7 @@ const geographyStyle = {
     outline: 'none',
   },
   hover: {
-    fill: '#ccc',
+    fill: '#be3d26',
     transition: 'all 250ms',
     outline: 'none'
   },
@@ -40,6 +41,13 @@ function App() {
   const onMouseEnter = (geo, current = { value: 'NA' }) => {
     return () => {
       setTooltipContent(`${geo.properties.name}`);
+      // setCurrentState(geo.id)
+    };
+  };
+
+  const onClick = (geo, current = { value: 'NA' }) => {
+    return () => {
+      // setTooltipContent(`${geo.properties.name}`);
       setCurrentState(geo.id)
     };
   };
@@ -61,12 +69,14 @@ function App() {
       <Row>
         <Col>
           <h1 className="no-margin center">Water/Waste Map</h1>
+        
         </Col>
       </Row>
       <hr/>
       <ReactTooltip>{tooltipContent}</ReactTooltip>
       <Row>
       <Col xs="8">
+        <RenderSwitch/>
         <DamModal modal={damModal} toggle={damToggle} currentState={currentState}/>
         <FactoryModal modal={factoryModal} toggle={factoryToggle} currentState={currentState}/>
         <ComposableMap
@@ -76,6 +86,7 @@ function App() {
             height={200}
             data-tip=""
           >
+            
             <Geographies geography={INDIA_TOPO_JSON}>
               {({ geographies }) =>
                 geographies.map(geo => {
@@ -84,9 +95,10 @@ function App() {
                     <Geography
                       key={geo.rsmKey}
                       geography={geo}
-                      fill='#ff8a75'
+                      fill={geo.id === currentState ? '#be3d26' : '#ff8a75'}
                       style={geographyStyle}
                       onMouseEnter={onMouseEnter(geo, current)}
+                      onClick={onClick(geo, current)}
                       onMouseLeave={onMouseLeave}
                     />
                   );
@@ -108,7 +120,7 @@ function App() {
             </div>
             <div onClick={damToggle}>
               <img src={waterDam} style={{width:"60px"}} alt='Dam'/>
-              <p>DAM INFO</p>
+              <p>INTERVENTIONS</p>
             </div>
           </div>
         </Row>

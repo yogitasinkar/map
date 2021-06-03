@@ -8,7 +8,7 @@ html, body {
 p{
   opacity: 0.8;
 }
-span{
+.small{
   font-size: 13px;
 }
 #root {
