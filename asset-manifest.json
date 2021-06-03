@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/yogitasinkar/map/static/css/main.c3073850.chunk.css",
+    "main.js": "/yogitasinkar/map/static/js/main.dded2e85.chunk.js",
+    "main.js.map": "/yogitasinkar/map/static/js/main.dded2e85.chunk.js.map",
+    "runtime-main.js": "/yogitasinkar/map/static/js/runtime-main.97eef607.js",
+    "runtime-main.js.map": "/yogitasinkar/map/static/js/runtime-main.97eef607.js.map",
+    "static/css/2.54c80412.chunk.css": "/yogitasinkar/map/static/css/2.54c80412.chunk.css",
+    "static/js/2.8d77a677.chunk.js": "/yogitasinkar/map/static/js/2.8d77a677.chunk.js",
+    "static/js/2.8d77a677.chunk.js.map": "/yogitasinkar/map/static/js/2.8d77a677.chunk.js.map",
+    "index.html": "/yogitasinkar/map/index.html",
+    "precache-manifest.cf65ca1088c684d68cf2a22106677026.js": "/yogitasinkar/map/precache-manifest.cf65ca1088c684d68cf2a22106677026.js",
+    "service-worker.js": "/yogitasinkar/map/service-worker.js",
+    "static/css/2.54c80412.chunk.css.map": "/yogitasinkar/map/static/css/2.54c80412.chunk.css.map",
+    "static/css/main.c3073850.chunk.css.map": "/yogitasinkar/map/static/css/main.c3073850.chunk.css.map",
+    "static/js/2.8d77a677.chunk.js.LICENSE.txt": "/yogitasinkar/map/static/js/2.8d77a677.chunk.js.LICENSE.txt",
+    "static/media/dam.svg": "/yogitasinkar/map/static/media/dam.d44b857e.svg",
+    "static/media/factory.svg": "/yogitasinkar/map/static/media/factory.32a28c5e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97eef607.js",
+    "static/css/2.54c80412.chunk.css",
+    "static/js/2.8d77a677.chunk.js",
+    "static/css/main.c3073850.chunk.css",
+    "static/js/main.dded2e85.chunk.js"
+  ]
+}
