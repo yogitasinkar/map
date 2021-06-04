@@ -8,9 +8,18 @@ const DamModal = ({modal, toggle, currentState}) => {
         <ModalBody>
             <Row>
                 <p className='text-center'>Reservoir</p>
+                <strong>Intervention Name:</strong>
                 <strong>Water Replenished:</strong>
                 <strong>People benifited:</strong>
                 <strong>Date:</strong>
+                <strong>Timeline:</strong>
+                <strong>Outcome:</strong>
+                <strong>Impact:</strong>
+                <strong>Partner Info:</strong>
+                <strong>Read Stories:</strong>
+                <strong>Reports:</strong>
+                <strong>Media:</strong>
+                <strong>Sharing Options:</strong>
             </Row>
         </ModalBody>
       </Modal>
